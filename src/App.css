@@ -1,38 +1,163 @@
-.App {
+
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+ /* border:1px solid black; */
+}
+
+body{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  background-color: #f2f2f2;
+}
+
+main{
+  width:375px;
+  margin:0 auto;
+ /* box-shadow: -5px 10px 20px 0px rgba(0,0,0,0.75);
+ /* border:1px solid pink */
+ background-color: white;
+ min-height: 100vh;
+}
+
+nav{
+  background: #2181D9;
+  height: 36px;
+}
+
+.center-title{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+  height: 100%;
+  text-align: center;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input{
+  width: 365px;
+  height: 34px;
+  display:block;
+  margin:0 auto;
+  margin-top:38px;
+  border:1px solid #2181D9;
+  border-radius: 6px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+}
+
+.cards{
+  margin-top:63px;
+  display:flex;
+}
+
+.card-element{
+  width: 125px;
+  height: 154px;
+}
+
+.card-element .card-title{
+  width: 84px;
+  height: 28px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  margin:0 auto;
+  margin-top: 15px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card-element .card-img{
+  width: 73px;
+  height: 73px;
+  margin:0 auto;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card-img img{
+  width: 100%;
+  height:100%
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card-element p{
+  margin-top:12px;
+  width: 73px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  margin-left:24px;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+#name-expense{
+  margin-top:56px;
+}
+
+#value-expense{
+  margin-top:8px;
+}
+
+.add-btn{
+  height: 46px;
+  background: #2181D9;
+  margin-top:25px;
+  border-radius:6px;
+  cursor: pointer;
+}
+
+.expense-array{
+  width: 355px;
+  height: 38px;
+  background: rgba(249, 0, 0, 0.82);
+  margin:0 auto;
+  margin-top:25px;
+  display:flex;
+  position: relative;
+}
+
+
+
+.expense-array p{
+  height:100%;
+  width:fit-content;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+  margin-left:6px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.del-btn{
+  width:30px;
+  height: 30px;
+  position: absolute;
+  right:9px;
+  top:3px;
+  background:transparent;
+  color:white;
+  outline: 0;
+  box-shadow: none;
+  border:none;
 }
